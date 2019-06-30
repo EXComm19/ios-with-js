@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>iOS</title>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script>
+    window.addEventListener('scroll', function() {
+      if (pageYOffset > 100) {
+        window.location = "./home.html"
+      }
+    });
+  </script>
+
+  <h1 id="lock-time">00:00</h1>
+  <h2 id="lock-date">Monday, 01 January</h2>
+  <br>
+  <p id="lock-text">Slide up to unlock</p>
+
+
+</body>
+
+</html>

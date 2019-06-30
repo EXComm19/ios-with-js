@@ -1,0 +1,47 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background-image: url("iOS Wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+#lock-time {
+  color: white;
+  font-size: 500%;
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 0px
+}
+
+#lock-date {
+  color: white;
+  margin: 1px;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#lock-text {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 61vh;
+}
+
+#lock-icon {
+  border-radius: 20%;
+  background-color: white;
+  width: 75px;
+}
+
+.icon {
+ margin-top: 3%;
+ margin-left: 6%;
+ margin-right: 6%;
+}

@@ -1,0 +1,23 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background-image: url("Note-Background.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: 100%;
+}
+
+#note {
+  height: 99vh;
+  width: 92vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  outline: none;
+  border: 0 none;
+  font-size: 20px;
+}
