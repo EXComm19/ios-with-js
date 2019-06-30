@@ -1,4 +1,4 @@
-function save() {
+async function save() {
   note = document.getElementById('note').value
 
   const data = {
@@ -11,11 +11,9 @@ function save() {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(data)
-  }
+  };
 
-  fetch('/save', options).then(response => {
-    console.log("log");
-    const res = response.json()
-    console.log(res);
-  })
+  const response = await fetch('/api', options);
+  const json = await response.json();
+  console.log(json);
 }
