@@ -1,16 +1,14 @@
-window.onload = function() {
-  $.get("note.txt", function(data) {
+window.onload = function () {
+  $.get("note.txt", function (data) {
     document.getElementById('note').value = data;
   });
 
-  document.getElementById('note').onkeyup = async function() {
+  document.getElementById('note').onkeyup = function () {
     var note = document.getElementById('note').value
     var data = {
       "note": note,
-      "save": "saved"
+      "status": "saved"
     }
-
-    console.log('save');
 
     const options = {
       method: 'POST',
@@ -19,8 +17,6 @@ window.onload = function() {
       },
       body: JSON.stringify(data)
     }
-    const res = await fetch('/api', options);
-    const json = await res.json();
-    await console.log(json);
+    fetch('/api', options)
   }
 }

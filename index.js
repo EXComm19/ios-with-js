@@ -8,8 +8,8 @@ app.use(express.static('public'))
 
 app.post('/api', (req, res) => {
   const data = req.body
-  console.log(data);
   fs.writeFile('./public/note/note.txt', data.note, (err) => {
     if (err) throw err;
   });
+  res.json() = data
 })
