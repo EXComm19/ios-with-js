@@ -3,7 +3,7 @@ window.onload = function() {
     document.getElementById('note').value = data;
   });
 
-  document.getElementById('note').onkeyup = function() {
+  document.getElementById('note').onkeyup = async function() {
     var note = document.getElementById('note').value
     var data = {
       "note": note,
@@ -19,8 +19,8 @@ window.onload = function() {
       },
       body: JSON.stringify(data)
     }
-    fetch('/api', options).then(res => {
-      console.log(res.json());
-    })
+    const res = await fetch('/api', options);
+    const json = await res.json();
+    await console.log(json);
   }
 }
