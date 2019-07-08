@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iOS - Note</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="safari.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <script>
+        window.addEventListener('scroll', function () {
+            if (pageYOffset > 150) {
+                window.location = "../home"
+            }
+        });
+    </script>
+
+    <!-- 
+    <form method="get" action="http://www.google.com/search" target="main"><input name="q" value="" type="hidden">
+        <input name="q" size="40" maxlength="2000" value="" type="text"></form> -->
+    <iframe src="https://www.google.com/webhp?igu=1" id="google"></iframe>
+
+
+</body>
+
+</html>

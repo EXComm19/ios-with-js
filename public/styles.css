@@ -3,11 +3,11 @@ html, body {
 }
 
 body {
+  height: 100vh;
   position: relative;
   background-image: url("iOS Wallpaper.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100%;
 }
 
 #lock-time {
@@ -34,14 +34,38 @@ body {
   padding-top: 61vh;
 }
 
+
 #lock-icon {
   border-radius: 20%;
   background-color: white;
-  width: 75px;
+  object-fit: cover;
+}
+
+#note-icon {
+  border-radius: 20%;
+  background-color: white;
+  object-fit: cover;
+}
+
+#safari-icon {
+  border-radius: 20%;
+  background-color: white;
+  object-fit: cover;
 }
 
 .icon {
- margin-top: 3%;
- margin-left: 6%;
- margin-right: 6%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 60px;
+  height: 60px;
+}
+
+#google {
+  width: 100vw;
+  height: 100vh;
+  border: 0px;
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 20%;
 }
